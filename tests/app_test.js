@@ -1,4 +1,4 @@
-var server = require('../server'),
+var server = require('../target/server'),
     chai = require('chai'),
     chaiHTTP = require('chai-http'),
     should = chai.should();
@@ -16,7 +16,5 @@ describe('Basic routes tests', function () {
                 res.should.have.status(200);
                 done();
             })
-
     })
-
 })
